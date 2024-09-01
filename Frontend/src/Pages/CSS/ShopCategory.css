@@ -1,0 +1,30 @@
+/* ShopCategory.css */
+
+/* Container for the shop category section */
+.shop-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5; /* Light background for the section */
+    padding: 20px; /* Padding around the container */
+  }
+  
+  /* Banner styling */
+  .shop-category img {
+    width: 100%; /* Full width of the viewport */
+    height: 30vh; /* 30% of the viewport height */
+    object-fit: contain; /* Ensures the entire image is visible */
+    object-position: center; /* Center the image if it's smaller than the container */
+    margin-bottom: 20px; /* Space below the banner */
+  }
+  
+  /* Container for the product list */
+  .shop-category-product {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    width: 100%; /* Full width of the container */
+    max-width: 1200px; /* Maximum width for larger screens */
+  }
+  

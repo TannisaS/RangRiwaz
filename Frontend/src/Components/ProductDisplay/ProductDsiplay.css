@@ -1,0 +1,164 @@
+/* ProductDisplay.css */
+
+/* Container for the product display */
+.product-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Left section with images */
+  .product-display-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+  }
+  
+  /* Image list for thumbnails */
+  .product-display-image-list {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Thumbnail images */
+  .product-display-image-list img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .product-display-image-list img:hover {
+    border-color: #000;
+  }
+  
+  /* Main image container */
+  .product-display-img {
+    flex: 1;
+  }
+  
+  /* Main product image */
+  .product-display-main-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Right section with product details */
+  .product-display-right {
+    flex: 2;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Product name */
+  .product-display-right h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Rating stars */
+  .product-display-right h2 {
+    font-size: 1.2rem;
+    color: #f39c12;
+    margin-bottom: 10px;
+  }
+  
+  /* Review count */
+  .product-display-right p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Price container */
+  .product-display-price {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* New price */
+  .product-new-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  /* Old price */
+  .prodct-old-price {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: #95a5a6;
+  }
+  
+  /* Product description */
+  .product-description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Size selection */
+  .product-display-size {
+    margin-bottom: 20px;
+  }
+  
+  .product-display-size h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-display-size div {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .product-display-size div:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Add to cart button */
+  button {
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Product tags */
+  .product-tags {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-tags span {
+    font-weight: bold;
+  }
+  
+  

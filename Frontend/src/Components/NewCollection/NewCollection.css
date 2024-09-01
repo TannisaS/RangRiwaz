@@ -1,0 +1,49 @@
+/* Popular.css */
+.new-collection {
+    padding: 20px; /* Space inside the container */
+    background-color: #f9f9f9; /* Light background for the section */
+    text-align: center; /* Center align heading */
+}
+
+.new-collection h1 {
+    font-size: 2rem; /* Font size for the heading */
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.new-collection hr {
+    width: 50%; /* Center the horizontal line */
+    margin: 10px auto; /* Center align and space above/below the line */
+    border: 0; /* Remove default border */
+    border-top: 2px solid #ddd; /* Light grey border for the line */
+}
+
+.new-collection > div {
+    display: grid; /* Flexbox for item layout */
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+}
+
+/* Optional container to control width */
+.item-container {
+    width: 250px; /* Adjust width as necessary */
+}
+
+.new-collection-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+}
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .popular > div {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+
+    .item-container {
+        width: 90%; /* Wider container on smaller screens */
+    }
+}

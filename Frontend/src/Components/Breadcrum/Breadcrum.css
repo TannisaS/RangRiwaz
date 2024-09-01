@@ -1,0 +1,43 @@
+.breadcrum {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8;
+  }
+  
+  .breadcrum a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .breadcrum a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrum::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url('../Assets/arrow_icon.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .breadcrum > span {
+    margin: 0 8px;
+  }
+  
+  .breadcrum > span:first-child::before {
+    content: '';
+    display: none;
+  }
+  
+  .breadcrum > span:not(:first-child)::before {
+    content: '>';
+    margin: 0 8px;
+    color: #aaa;
+  }
+  

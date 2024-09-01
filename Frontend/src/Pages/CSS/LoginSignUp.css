@@ -1,0 +1,98 @@
+/* LoginSignUp.css */
+
+/* Main container for the login/signup page */
+.login-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light grey background for the page */
+    padding: 20px;
+  }
+  
+  /* Container for the form */
+  .signup {
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the form */
+    padding: 30px; /* Padding inside the form container */
+    max-width: 400px; /* Maximum width of the form */
+    width: 100%; /* Full width up to max-width */
+  }
+  
+  /* Form title */
+  .signup h1 {
+    font-size: 24px; /* Font size for the heading */
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+  }
+  
+  /* Input fields styling */
+  .signup-holder {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Space between inputs */
+    margin-bottom: 20px; /* Space below the input group */
+  }
+  
+  .signup-holder input[type='text'],
+  .signup-holder input[type='email'],
+  .signup-holder input[type='password'] {
+    padding: 12px; /* Padding inside the input fields */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for the inputs */
+    font-size: 16px; /* Font size for the input text */
+  }
+  
+  .signup-holder input[type='text']::placeholder,
+  .signup-holder input[type='email']::placeholder,
+  .signup-holder input[type='password']::placeholder {
+    color: #999; /* Light grey placeholder text */
+  }
+  
+  /* Submit button styling */
+  button {
+    width: 100%; /* Full width button */
+    padding: 12px; /* Padding inside the button */
+    background-color: #007bff; /* Primary color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    font-size: 16px; /* Font size for the button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 20px; /* Space below the button */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Link to switch between login and signup */
+  .Login {
+    text-align: center; /* Center align the text */
+    margin-bottom: 10px; /* Space below the text */
+  }
+  
+  .Login span {
+    color: #007bff; /* Primary color for the login link */
+    cursor: pointer; /* Pointer cursor for the link */
+    font-weight: bold; /* Bold font for the link */
+  }
+  
+  .Login span:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Checkbox and terms text styling */
+  .signup input[type='checkbox'] {
+    margin-right: 10px; /* Space between checkbox and text */
+  }
+  
+  .signup p {
+    font-size: 14px; /* Font size for the paragraph text */
+    color: #666; /* Darker grey color for the text */
+    margin-top: 0; /* Remove default margin on top */
+  }
+  

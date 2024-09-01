@@ -1,0 +1,67 @@
+/* NewsLetter.css */
+.news-letter {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    padding: 40px 20px; /* Generous padding around the section */
+    text-align: center; /* Center align text */
+    border-radius: 8px; /* Rounded corners for the section */
+    margin: 20px auto; /* Center the section horizontally */
+    max-width: 600px; /* Max width for the section */
+}
+
+.news-letter h1 {
+    font-size: 1.8rem; /* Font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.news-letter p {
+    font-size: 1rem; /* Font size for the subheading */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.news-letter input {
+    padding: 10px; /* Padding inside the input */
+    border: none; /* Remove default border */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+    width: 60%; /* Width of the input field */
+    max-width: 400px; /* Max width for responsiveness */
+    font-size: 1rem; /* Font size for the input text */
+}
+
+.news-letter button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+    background-color: #e74c3c; /* Red background for the button */
+    color: #fff; /* White text color */
+    font-size: 1rem; /* Font size for the button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.news-letter button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.news-letter div {
+    display: flex; /* Flexbox for input and button layout */
+    justify-content: center; /* Center align input and button */
+    margin-top: 20px; /* Space above the form */
+}
+
+/* Optional: Responsive design */
+@media (max-width: 768px) {
+    .news-letter input {
+        width: 70%; /* Wider input field on smaller screens */
+    }
+
+    .news-letter button {
+        width: 100%; /* Full-width button on smaller screens */
+        margin-top: 10px; /* Space above the button */
+    }
+
+    .news-letter div {
+        flex-direction: column; /* Stack input and button vertically */
+        align-items: center; /* Center align input and button */
+    }
+}

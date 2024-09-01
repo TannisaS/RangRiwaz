@@ -1,0 +1,88 @@
+/* Hero.css */
+.hero {
+    display: flex;
+    flex-direction: row; /* Align child elements side-by-side */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .hero-left {
+    flex: 1; /* Take up 50% of the width */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    padding: 20px; /* Padding around content */
+    background-color: #f8f9fa; /* Light background color for the left side */
+    color: #333; /* Text color */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .hero-left h1 {
+    font-size: 3rem; /* Large heading */
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+  }
+  
+  .hero-left p {
+    font-size: 1.25rem; /* Slightly larger text for emphasis */
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+  }
+  
+  .hero-hand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; /* Space around the icon */
+  }
+  
+  .hero-hand-icon p {
+    font-size: 1.5rem; /* Larger text size for emphasis */
+    margin-right: 10px; /* Space between text and icon */
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+  }
+  
+  .hand {
+    max-width: 80px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .hero-button {
+    margin-top: 30px; /* Space above the button */
+  }
+  
+  .hero-button button {
+    padding: 15px 30px; /* Button padding */
+    border: none;
+    background-color: #007bff; /* Primary button color */
+    color: #fff; /* Text color */
+    font-size: 1rem; /* Font size */
+    cursor: pointer;
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+  
+  .hero-button button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .hero-button button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+  }
+  
+  .hero-right {
+    flex: 1; /* Take up 50% of the width */
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    background-color: #fff; /* Background color for the right side */
+  }
+  
+  .hero-right img {
+    max-width: 100%; /* Ensure image scales with container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+  }
+  

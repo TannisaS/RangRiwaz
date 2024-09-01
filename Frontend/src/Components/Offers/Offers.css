@@ -1,0 +1,70 @@
+/* Offers.css */
+.offer {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out items horizontally */
+    padding: 20px; /* Padding around the section */
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.offer-left {
+    flex: 1; /* Take up available space */
+    padding: 20px; /* Padding inside the left section */
+    text-align: left; /* Align text to the left */
+}
+
+.offer-left h1 {
+    font-size: 2rem; /* Font size for the headings */
+    color: #333; /* Dark grey color for the text */
+    margin: 0 0 10px 0; /* Space below the headings */
+}
+
+.offer-left h1:first-of-type {
+    font-size: 2.5rem; /* Larger font size for the first heading */
+    margin-bottom: 5px; /* Smaller margin below the first heading */
+}
+
+.offer-left button {
+    background-color: #e74c3c; /* Red background for the button */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1rem; /* Font size for the button text */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.offer-left button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.offer-right {
+    flex: 1; /* Take up available space */
+    padding: 20px; /* Padding inside the right section */
+    text-align: center; /* Center align the image */
+}
+
+.offer-right img {
+    max-width: 100%; /* Ensure image does not overflow its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .offer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center align text and button */
+    }
+
+    .offer-right {
+        padding: 10px 0; /* Adjust padding for the image */
+    }
+
+    .offer-left button {
+        width: 100%; /* Full-width button on small screens */
+    }
+}

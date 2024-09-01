@@ -1,0 +1,83 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Optional background color */
+  }
+  
+.nav-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+.nav-logo img {
+    width: 50px; 
+    height:50px;
+    border-radius: 10%;/* Adjust logo size as needed */
+    margin-right: 10px;
+  }
+  
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+.nav-menu li {
+    cursor: pointer;
+  }
+  
+.nav-login {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+.nav-menu hr{
+    border:none;
+    width:90%;
+    height:3px;
+    background-color: red;
+}
+
+.sty{
+    border:none;
+    width:90%;
+    height:3px;
+    background-color: red;
+}
+.nav-login button {
+    border-radius: 10%;
+    width:100px;
+    height:40px;
+    font-size:15px;
+    background-color:white;
+    cursor:pointer;
+    /* Button styles */
+  }
+  
+.nav-login img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%; /* Adjust cart logo size as needed */
+
+  }
+
+.nav-login button:active{
+    background-color: aliceblue;
+}
+
+.nav-cart-count{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    margin-top: -45px;
+    margin-left: -35px ;
+    background-color: red;
+    font-size: 10px;
+}
+  

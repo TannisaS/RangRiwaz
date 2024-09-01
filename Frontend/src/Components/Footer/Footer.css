@@ -1,0 +1,100 @@
+/* Footer.css */
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    padding: 40px 20px; /* Generous padding around the footer */
+    text-align: center; /* Center align text */
+    border-top: 1px solid #444; /* Subtle top border */
+}
+
+.footer-logo {
+    margin-bottom: 20px; /* Space below the logo section */
+}
+
+.footer-logo img {
+    width: 120px; /* Fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the logo */
+}
+
+.footer-logo p {
+    font-size: 1.5rem; /* Font size for the brand name */
+    margin: 10px 0; /* Space above and below the brand name */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.footer-links {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 20px 0; /* Space above and below the links */
+}
+
+.footer-links li {
+    display: inline-block; /* Display list items inline */
+    margin: 0 15px; /* Space between items */
+    font-size: 1rem; /* Font size for links */
+    font-weight: 500; /* Slightly bold font */
+}
+
+.footer-links li:hover {
+    color: #e74c3c; /* Change color on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.social-icon {
+    margin: 20px 0; /* Space above and below social icons */
+}
+
+.icon-container {
+    display: inline-block; /* Display icons inline */
+    margin: 0 10px; /* Space between icons */
+}
+
+.icon-container img {
+    width: 32px; /* Fixed width for icons */
+    height: 32px; /* Fixed height for icons */
+    border-radius: 50%; /* Circular icons */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.icon-container img:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+.footer-copyright {
+    margin-top: 20px; /* Space above the copyright section */
+}
+
+.footer-copyright hr {
+    width: 50%; /* Center the horizontal line */
+    margin: 10px auto; /* Center align and space above/below the line */
+    border: 0; /* Remove default border */
+    border-top: 1px solid #444; /* Light grey border for the line */
+}
+
+.footer-copyright p {
+    font-size: 0.875rem; /* Smaller font size for copyright text */
+    color: #aaa; /* Light grey color for copyright text */
+    margin: 10px 0; /* Space above and below the copyright text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-logo img {
+        width: 100px; /* Smaller logo on smaller screens */
+    }
+
+    .footer-links li {
+        display: block; /* Stack links vertically on smaller screens */
+        margin: 10px 0; /* Space above and below links */
+    }
+
+    .social-icon {
+        margin: 10px 0; /* Reduce space around social icons */
+    }
+
+    .icon-container img {
+        width: 24px; /* Smaller icons on smaller screens */
+        height: 24px; /* Smaller icons on smaller screens */
+    }
+}

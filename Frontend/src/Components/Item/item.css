@@ -1,0 +1,59 @@
+/* item.css */
+.item {
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure child elements don't overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 16px; /* Space around each item */
+  padding: 16px; /* Space inside the item */
+  background-color: #fff; /* White background */
+  text-align: center; /* Center align text and elements */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  display: flex; /* Flexbox for item layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items */
+}
+
+/* Optional: Set a fixed width for item container if needed */
+.item-container {
+  width: 250px; /* Adjust width as necessary */
+}
+
+/* Image styling */
+.item img {
+  width: 80%; /* Adjust width to be a percentage of the item container */
+  max-width: 200px; /* Set a maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 1px solid #ddd; /* Separator between image and text */
+  margin-bottom: 8px; /* Space below the image */
+}
+
+/* Text styling */
+.item p {
+  font-size: 16px; /* Font size for item name */
+  margin: 8px 0; /* Margin around item name */
+  font-weight: bold; /* Bold font for item name */
+}
+
+/* Price layout */
+.item-price {
+  display: flex; /* Flexbox for price layout */
+  flex-direction: column; /* Stack prices vertically */
+  align-items: center; /* Center align prices */
+  margin-top: 8px; /* Space above prices */
+}
+
+/* New price styling */
+.item-new-price {
+  font-size: 18px; /* Font size for new price */
+  color: #e74c3c; /* Red color for new price */
+  font-weight: bold; /* Bold font for new price */
+}
+
+/* Old price styling */
+.item-old-price {
+  font-size: 14px; /* Font size for old price */
+  color: #999; /* Light grey color for old price */
+  text-decoration: line-through; /* Strikethrough old price */
+  margin-top: 4px; /* Space above old price */
+}
